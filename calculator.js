@@ -15,7 +15,12 @@ function multiply(num1, num2) {
 
 function divide(num1, num2) {
 	var answer = num1 / num2
-	return answer;
+	if (num2 === 0) {
+	return console.log("You can't divide by zero.")
+  } 
+    else if (num2 != 0) {
+    return answer;
+    }
 }
 
 module.exports = {
